@@ -6,7 +6,7 @@ public class converter {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Выберите что переводить: 1 - масса, 2 - расстояние: ");
-        int phrase1 = sc.nextInt();
+        byte phrase1 = sc.nextByte();
         byte phrase2; //переменная для мер величин
         float phrase3; //переменная для числа
 
@@ -43,10 +43,9 @@ public class converter {
                     System.out.println("Тонна = " + phrase3);
                     break;
                 default:
-                    System.out.println("Все пошло по пизде");
+                    System.out.println("Упс! Что-то пошло не так...");
                     break;
             }
-
         }
 
         if (phrase1 == 2){
@@ -82,7 +81,7 @@ public class converter {
                     System.out.println("Фут = " + phrase3);
                     break;
                 default:
-                    System.out.println("Все пошло по пизде");
+                    System.out.println("Упс! Что-то пошло не так...");
                     break;
             }
         }
