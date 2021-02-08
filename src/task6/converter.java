@@ -15,7 +15,7 @@ public class converter {
             phrase2 = sc.nextByte();
 
             System.out.print("Введите число: ");
-            phrase3 = sc.nextInt();
+            phrase3 = sc.nextFloat();
 
             switch(phrase2) {
                 case 1:
