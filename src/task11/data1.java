@@ -10,18 +10,10 @@ public class data1 {
         System.out.print("Ввести второе число: ");
         int num2 = input.nextInt();
 
-        int tmp1 = Integer.parseInt(num1);
+        double tmp1 = Double.parseDouble(num1);
+        double tmp2= Double.valueOf(num2);
 
-        System.out.println("Большее из чисел: " + Math.max(tmp1,  num2));
-
-        //Сделал два варианта. Какой из них корректный?
-        //Оба выводят значение с плавающей точкой.
-        int min = Math.min(tmp1,  num2);
-        double tmp2 = Double.valueOf (min);
-        System.out.println("Меньшее из чисел: " + tmp2);
-
-        double tmp3 = Math.min(tmp1,  num2);
-        System.out.println("Меньшее из чисел: " + tmp3);
-
+        System.out.println("Большее из чисел: " + Math.max(tmp1,  tmp2));
+        System.out.println("Меньшее из чисел: " + Math.min(tmp1,  tmp2));
     }
 }
