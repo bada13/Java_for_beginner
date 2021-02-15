@@ -7,7 +7,8 @@ public class data3 {
         System.out.print("Ввести строку: ");
         String text = input.nextLine();
 
-        String str1 = text.replaceAll("[а-яА-Я\\d]", "");
+        String str1;
+        str1 = text.replaceAll("[а-яА-Я\\d]", "").replaceAll("[-+.^:,*/?!@#%&_='\";{})($]", "");
         System.out.println("Слова состоящие только из латиницы: " + str1);
 
         int length=str1.split("\\s+").length;
